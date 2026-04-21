@@ -11,14 +11,17 @@
 
 <div class="app">
 
+  <!-- SIDEBAR -->
   <aside class="sidebar">
     <h2>🔥 Mega JN</h2>
-    <a href="#">🏆 Torneios</a>
-    <a href="#">📰 Notícias</a>
-    <a href="#">📊 Ranking</a>
-    <a href="#">💰 Apoiar</a>
+
+    <button onclick="login()">Entrar com Google</button>
+    <button onclick="logout()">Sair</button>
+
+    <p id="userInfo">Não logado</p>
   </aside>
 
+  <!-- CONTEÚDO -->
   <main class="content">
 
     <section>
@@ -42,12 +45,13 @@
 
 </div>
 
+<!-- SUPABASE -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 
 <script>
 const supabase = window.supabase.createClient(
   "https://alprmhstzzbxfhkjaeil.supabase.co",
-  "COLE_SUA_CHAVE_AQUI"
+  "COLE_SUA_ANON_KEY_AQUI"
 );
 </script>
 
