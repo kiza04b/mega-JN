@@ -3,112 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <title>Mega JN</title>
+
+  <!-- Fonte gamer -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-  <h1>🔥 Mega JN</h1>
-  <nav>
-    <a href="#">Torneios</a>
-    <a href="#">Criar</a>
-    <a href="#">Ranking</a>
-  </nav>
-</header>
+<div class="app">
 
-<section class="hero">
-  <h2>Entre nos melhores campeonatos de Brawl Stars</h2>
-  <p>Descubra, participe e domine a arena</p>
-  <button>Explorar torneios</button>
-</section>
+  <!-- MENU LATERAL -->
+  <aside class="sidebar">
+    <h2>🔥 Mega JN</h2>
+    <a href="#">🏆 Torneios</a>
+    <a href="#">📰 Notícias</a>
+    <a href="#">📊 Ranking</a>
+    <a href="#">💰 Apoiar</a>
+  </aside>
 
-<section class="container">
-  <h2>🏆 Torneios em destaque</h2>
+  <!-- CONTEÚDO -->
+  <main class="content">
 
-  <div class="grid">
-    <div class="card">
-      <h3>3x3 Competitivo</h3>
-      <p>📅 25/04 - 20:00</p>
-      <p>💰 R$100</p>
-      <button>Entrar</button>
-    </div>
+    <section>
+      <h1>🏆 Torneios</h1>
 
-    <div class="card">
-      <h3>Duo Showdown</h3>
-      <p>📅 26/04 - 18:00</p>
-      <p>💰 Grátis</p>
-      <button>Entrar</button>
-    </div>
+      <div class="grid">
+        <div class="card">
+          <h3>3x3 Competitivo</h3>
+          <p>📅 25/04</p>
+          <p>💰 R$100</p>
+          <button>Entrar</button>
+        </div>
 
-    <div class="card">
-      <h3>Solo Pro</h3>
-      <p>📅 27/04 - 21:00</p>
-      <p>💰 R$200</p>
-      <button>Entrar</button>
-    </div>
-  </div>
-</section>
+        <div class="card">
+          <h3>Duo Showdown</h3>
+          <p>📅 26/04</p>
+          <p>💰 Grátis</p>
+          <button>Entrar</button>
+        </div>
+      </div>
+    </section>
 
-<section class="container">
-  <h2>📰 Notícias dos Campeonatos</h2>
+    <section>
+      <h1>📰 Notícias</h1>
 
-  <div class="card">
-    <h3>🔥 Final épica do 3x3!</h3>
-    <p>O time Alpha venceu após uma virada incrível.</p>
-  </div>
+      <div class="card">
+        <h3>🔥 Final incrível!</h3>
+        <p>Time Alpha venceu o campeonato principal.</p>
+      </div>
 
-  <div class="card">
-    <h3>💰 Novo torneio anunciado</h3>
-    <p>Premiação de R$500 com inscrições abertas.</p>
-  </div>
-</section>
+      <div class="card">
+        <h3>💰 Novo torneio</h3>
+        <p>Premiação de R$500 aberta.</p>
+      </div>
+    </section>
 
-<section class="container">
-  <h2>🏆 Ranking Top 5 Jogadores</h2>
-  <ol>
-    <li>Player1 - 1500 pts</li>
-    <li>Player2 - 1400 pts</li>
-    <li>Player3 - 1300 pts</li>
-    <li>Player4 - 1200 pts</li>
-    <li>Player5 - 1100 pts</li>
-  </ol>
+    <section>
+      <h1>📊 Ranking</h1>
 
-  <h2>👥 Top 5 Times</h2>
-  <ol>
-    <li>Team Alpha</li>
-    <li>Team Beta</li>
-    <li>Team Omega</li>
-    <li>Team X</li>
-    <li>Team Z</li>
-  </ol>
-</section>
+      <div class="grid">
+        <div class="card">
+          <h3>Top Jogadores</h3>
+          <ol>
+            <li>Player1</li>
+            <li>Player2</li>
+            <li>Player3</li>
+            <li>Player4</li>
+            <li>Player5</li>
+          </ol>
+        </div>
 
-<section class="container">
-  <h2>➕ Criar torneio</h2>
+        <div class="card">
+          <h3>Top Times</h3>
+          <ol>
+            <li>Team Alpha</li>
+            <li>Team Beta</li>
+            <li>Team Omega</li>
+            <li>Team X</li>
+            <li>Team Z</li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
-  <form>
-    <input type="text" placeholder="Nome do torneio" required>
-    <input type="datetime-local" required>
-    <input type="text" placeholder="Formato (3x3, duo...)" required>
-    <input type="text" placeholder="Premiação">
-    <input type="text" placeholder="Link de inscrição" required>
+    <section>
+      <h1>💰 Apoiar campeonato</h1>
 
-    <button type="submit">Publicar torneio</button>
-  </form>
-</section>
+      <div class="card">
+        <input type="number" id="valorDoacao" placeholder="Valor (R$)">
+        <button onclick="doar()">Doar</button>
+      </div>
+    </section>
 
-<section class="container">
-  <h2>💰 Apoiar campeonato</h2>
+  </main>
 
-  <div class="card">
-    <input type="number" id="valorDoacao" placeholder="Valor (R$)">
-    <button onclick="doar()">Doar</button>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Mega JN - Todos os direitos reservados</p>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>
