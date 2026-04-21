@@ -4,16 +4,13 @@
   <meta charset="UTF-8">
   <title>Mega JN</title>
 
-  <!-- Fonte gamer -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="app">
 
-  <!-- MENU LATERAL -->
   <aside class="sidebar">
     <h2>🔥 Mega JN</h2>
     <a href="#">🏆 Torneios</a>
@@ -22,83 +19,37 @@
     <a href="#">💰 Apoiar</a>
   </aside>
 
-  <!-- CONTEÚDO -->
   <main class="content">
 
     <section>
       <h1>🏆 Torneios</h1>
-
-      <div class="grid">
-        <div class="card">
-          <h3>3x3 Competitivo</h3>
-          <p>📅 25/04</p>
-          <p>💰 R$100</p>
-          <button>Entrar</button>
-        </div>
-
-        <div class="card">
-          <h3>Duo Showdown</h3>
-          <p>📅 26/04</p>
-          <p>💰 Grátis</p>
-          <button>Entrar</button>
-        </div>
-      </div>
+      <div class="grid"></div>
     </section>
 
     <section>
-      <h1>📰 Notícias</h1>
+      <h1>➕ Criar torneio</h1>
 
-      <div class="card">
-        <h3>🔥 Final incrível!</h3>
-        <p>Time Alpha venceu o campeonato principal.</p>
-      </div>
-
-      <div class="card">
-        <h3>💰 Novo torneio</h3>
-        <p>Premiação de R$500 aberta.</p>
-      </div>
-    </section>
-
-    <section>
-      <h1>📊 Ranking</h1>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Top Jogadores</h3>
-          <ol>
-            <li>Player1</li>
-            <li>Player2</li>
-            <li>Player3</li>
-            <li>Player4</li>
-            <li>Player5</li>
-          </ol>
-        </div>
-
-        <div class="card">
-          <h3>Top Times</h3>
-          <ol>
-            <li>Team Alpha</li>
-            <li>Team Beta</li>
-            <li>Team Omega</li>
-            <li>Team X</li>
-            <li>Team Z</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h1>💰 Apoiar campeonato</h1>
-
-      <div class="card">
-        <input type="number" id="valorDoacao" placeholder="Valor (R$)">
-        <button onclick="doar()">Doar</button>
-      </div>
+      <form>
+        <input type="text" placeholder="Nome do torneio" required>
+        <input type="datetime-local" required>
+        <input type="text" placeholder="Formato" required>
+        <input type="text" placeholder="Premiação">
+        <button type="submit">Publicar</button>
+      </form>
     </section>
 
   </main>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<script>
+const supabase = window.supabase.createClient(
+  "https://alprmhstzzbxfhkjaeil.supabase.co",
+  "COLE_SUA_CHAVE_AQUI"
+);
+</script>
 
 <script src="script.js"></script>
 </body>
