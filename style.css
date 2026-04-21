@@ -1,21 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
-}
-
 body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
   background: #020617;
   color: white;
 }
 
-/* APP LAYOUT */
 .app {
   display: flex;
 }
 
-/* SIDEBAR */
 .sidebar {
   width: 220px;
   height: 100vh;
@@ -26,84 +19,29 @@ body {
 
 .sidebar h2 {
   color: #22c55e;
-  margin-bottom: 20px;
 }
 
 .sidebar a {
   display: block;
   margin: 15px 0;
-  text-decoration: none;
   color: white;
-  transition: 0.3s;
+  text-decoration: none;
 }
 
-.sidebar a:hover {
-  color: #22c55e;
-}
-
-/* CONTENT */
 .content {
   flex: 1;
   padding: 30px;
 }
 
-/* TITLES */
-h1 {
-  margin-bottom: 15px;
-  color: #22c55e;
-}
-
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-/* CARD */
 .card {
   background: #0f172a;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 12px;
   border: 1px solid #22c55e;
-  box-shadow: 0 0 10px #22c55e33;
-  transition: 0.3s;
-  margin-bottom: 15px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px #22c55e;
-}
-
-/* BUTTON */
-button {
-  margin-top: 10px;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(45deg, #22c55e, #4ade80);
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* INPUT */
-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 8px;
-  border: none;
-}
-
-/* LIST */
-ol {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-ol li {
-  margin: 5px 0;
 }
