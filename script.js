@@ -1,8 +1,3 @@
-document.querySelector("form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("🚀 Torneio publicado no Mega JN!");
-});
-
 function doar() {
   let valor = document.getElementById("valorDoacao").value;
 
@@ -11,5 +6,5 @@ function doar() {
     return;
   }
 
-  alert("💰 Em breve sistema de doação real!");
+  alert("💰 Sistema profissional será adicionado em breve!");
 }
