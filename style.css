@@ -17,17 +17,6 @@ body {
   padding: 20px;
 }
 
-.sidebar h2 {
-  color: #22c55e;
-}
-
-.sidebar a {
-  display: block;
-  margin: 15px 0;
-  color: white;
-  text-decoration: none;
-}
-
 .content {
   flex: 1;
   padding: 30px;
