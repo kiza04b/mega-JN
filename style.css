@@ -1,57 +1,56 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: 'Orbitron', sans-serif;
 }
 
 body {
-  background: linear-gradient(135deg, #020617, #0f172a);
+  background: #020617;
   color: white;
 }
 
-/* HEADER */
-.header {
+/* APP LAYOUT */
+.app {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  height: 100vh;
   background: #020617;
-  border-bottom: 1px solid #22c55e;
+  border-right: 2px solid #22c55e;
+  padding: 20px;
 }
 
-.header h1 {
+.sidebar h2 {
   color: #22c55e;
+  margin-bottom: 20px;
 }
 
-.header nav a {
-  margin-left: 20px;
+.sidebar a {
+  display: block;
+  margin: 15px 0;
   text-decoration: none;
   color: white;
+  transition: 0.3s;
 }
 
-.header nav a:hover {
+.sidebar a:hover {
   color: #22c55e;
 }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #22c55e;
-  border: none;
-  border-radius: 8px;
-}
-
-/* CONTAINER */
-.container {
+/* CONTENT */
+.content {
+  flex: 1;
   padding: 30px;
+}
+
+/* TITLES */
+h1 {
+  margin-bottom: 15px;
+  color: #22c55e;
 }
 
 /* GRID */
@@ -63,29 +62,43 @@ body {
 
 /* CARD */
 .card {
-  background: #1e293b;
+  background: #0f172a;
   padding: 20px;
-  border-radius: 12px;
-  margin-top: 15px;
+  border-radius: 15px;
+  border: 1px solid #22c55e;
+  box-shadow: 0 0 10px #22c55e33;
+  transition: 0.3s;
+  margin-bottom: 15px;
 }
 
-/* FORM */
-input, button {
-  display: block;
-  width: 100%;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #22c55e;
+}
+
+/* BUTTON */
+button {
   margin-top: 10px;
-  padding: 12px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #22c55e, #4ade80);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
   border-radius: 8px;
   border: none;
 }
 
-button {
-  background: #22c55e;
-  color: white;
-  font-weight: bold;
-}
-
-/* LISTA */
+/* LIST */
 ol {
   margin-top: 10px;
   padding-left: 20px;
@@ -93,11 +106,4 @@ ol {
 
 ol li {
   margin: 5px 0;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  opacity: 0.6;
 }
